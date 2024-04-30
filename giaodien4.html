@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .header #para {
+        color: pink; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+        font-weight: bold; 
+        font-size: 30px; 
+        margin: 10px 40px;
+        float: left;
+    }
+    #menu {
+        clear: left;
+    }
+    #menu ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    }
+
+    #menu ul li {
+        position: relative;
+    }
+
+    #menu ul li a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        width: 100px;
+        display: inline-block;
+    }
+
+    #menu ul li a:hover {
+        background-color: gray;
+    }
+    .content {
+        display: flex;
+    }
+    #product {
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <p id="para">SHOP</p>
+        <input type="text" placeholder="Search" style="margin-left: 450px; height: 30px; width: 200px; margin-top: 10px; float: left;">
+        <div style="background-color: pink; color: white; margin-left: 1400px; margin-top: 35px; width: fit-content; height: 30px; text-align: justify;">0 Item($) - $0.00</div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Jewelry</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Closthing</a></li>
+                <li><a href="#">Jeans</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">The grirl</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div id = "list" style="margin-left: 10px; margin-top: 15px;">
+            <p><b>Danh mục</b></p>
+            <p><b>Tất cả sản phẩm</b></p>
+            <ul style="list-style-type: none;">
+                <li><b>Sale</b></li>
+                <li>Sale upto 50%</li>
+                <li><b>Sale upto 70%</b></li>
+                <li>Đồn giá từ 99k</li>
+            </ul>
+            <ul style="list-style-type: none;">
+                <li><b>Đầm</b></li>
+                <li>Đầm 1</li>
+                <li>Đầm 2</li>
+                <li>Đầm 3</li>
+            </ul>
+            <ul style="list-style-type: none;">
+                <li><b>Áo sơ mi</b></li>
+                <li>Áo sơ mi 1</li>
+                <li>Áo sơ mi 2</li>
+                <li>Áo sơ mi 3</li>
+                <li>Áo sơ mi 4</li>
+            </ul>
+            <ul style="list-style-type: none;">
+                <li><b>Quần 1</b></li>
+                <li>Quần 1</li>
+                <li>Quần 2</li>
+                <li>Quần 3</li>
+            </ul>
+        </div>
+        <div id="product">
+            <div><b>SALE 70%</b></div>
+            <div>      
+                <div style="background-color: blue; color: yellow; width: 300px; height: 490px; text-align: center; display: inline-block;">
+                    <img src="1.2.png" style="width: 300px; height: 450px;">
+                    CHÂN VÁY HOA HỒNG<br>
+                    <p style="color: black;">299.000
+                        <span style="color: red; text-decoration: line-through";>699.000đ</span>
+                    </p>
+                </div>
+                <div style="background-color: blue; color: yellow; width: 300px; height: 490px; text-align: center; display: inline-block;">
+                    <img src="1.2.png" style="width: 300px; height: 450px;">
+                    CHÂN VÁY HOA HỒNG<br>
+                    <p style="color: black;">299.000
+                        <span style="color: red; text-decoration: line-through";>699.000đ</span>
+                    </p>
+                </div>
+                <div style="background-color: blue; color: yellow; width: 300px; height: 490px; text-align: center; display: inline-block;">
+                    <img src="1.2.png" style="width: 300px; height: 450px;">
+                    CHÂN VÁY HOA HỒNG<br>
+                    <p style="color: black;">299.000
+                        <span style="color: red; text-decoration: line-through";>699.000đ</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

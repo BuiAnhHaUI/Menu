@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .main {
+        background-color: yellowgreen;
+    }
+
+    .menu ul {
+        clear: left;
+        background-color: green;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        list-style-type: none;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: blue;
+        line-height: 50px;
+        width: 100px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .menu ul li a:hover {
+        background-color: gray;
+    }
+
+    .super {
+        position: relative;
+    }
+
+    ul.sub {
+        display: none;
+        position: absolute;
+        width: 200px;
+        height: 250px;
+    }
+
+    .super:hover .sub {
+        display: block;
+    }
+
+    .list {
+        margin: 90px;
+        font-size: 20px;
+        float: left
+    }
+
+    .pic {
+        float: left;
+        margin-top: 20px;
+        margin-left: 50px;
+        border: solid black;
+        border-top: yellow;
+        padding: 5px 20px;
+        background-color: white;
+        width: 200px;
+        height: 350px;
+    }
+
+    .section .paragraph {
+        margin-left: 0px;
+    }
+
+    .footer {
+        margin-top: 310px;
+        clear: left;
+        background-color: gray;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="1.1.png" style="width: 130px; height: 130px; border: solid  black; float: left;">
+            <h1 style="margin-left: 470px; font-size: 45px;">TRUYỆN NGẮN</h1>
+            <h1 style="margin-left: 650px; margin-top: 10px; font-size: 45px;">HAY TRONG TUẦN</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Truyện blog</a></li>
+                <li class="super">
+                    <a href="#">Truyện ngắn</a>
+                    <ul class="sub">
+                        <li><a href="#">Truyện ngắn về tinh yêu</a></li>
+                        <li><a href="#">Truyện ngắn về gia đình</a></li>
+                        <li><a href="#">Truyện ngắn về bạn bè</a></li>
+                        <li><a href="#">Truyện ngắn về đời sống</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sách hay</a></li>
+                <li><a href="#">Tâm sự</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Truyện cười</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="list">
+                <ul type="disc">
+                    <h3>Tủ sách</h3>
+                    <li>Truyện nổi bật</li>
+                    <li>Tiểu thuyết mới</li>
+                    <li>Truyện kiếm hiệp mới</li>
+                    <li>Truyện khoa học viễn tưởng</li>
+                    <li>Truyện trinh thám</li>
+                    <li>Góc cười</li>
+                    <li>Góc tâm sự</li>
+                </ul>
+            </div>
+            <div class="common">
+                <img class="pic" src="1.2.png">
+               <p class="paragraph">
+                    Phút 68: VÀO!!! Tận dụng việc U22 Malaysia dồn toàn lực lên, U22 Campuchia đã có bàn thắng thứ 3. Sau
+                    khi
+                    nhận được đường chuyền bên cánh phải, Keo Solpheng đã dứt điểm nhanh, không cho thủ thành của U22
+                    Malaysia
+                    cơ hội cân phá.Phút 57: VÀO!!! Chỉ sau đúng 2 phút, U22 Campuchia đã có được bàn thắng thứ 2. Từ pha
+                    phản
+                    công, Sieng Chanthea đã có pha đi bóng khéo léo, trước khi dứt điểm tung nóc lưới U22 Malaysia ở gốc
+                    hẹp.
+                    2-0 cho U22 Campuchia. Lúc này, hiệu số bàn thắng bại của họ đã vươn lên là +6. Phút 68: VÀO!!! Tận dụng
+                    việc U22 Malaysia dồn toàn lực lên, U22 Campuchia đã có bàn thắng thứ 3. Sau khi nhận được đường chuyển
+                    bên
+                    cánh phải, Keo Solpheng đã dứt điểm nhanh, không cho thủ thành của U22 Malaysia cơ hội cản phá. Phút 57:
+                    VÀO!!! Chỉ sau đúng 2 phút, U22 Campuchia đã có được bàn thắng thứ 2. Từ pha phản công, Sieng Chanthea
+                    đã có
+                    pha đi bóng khéo léo, trước khi dứt điểm tung nóc lưới U22 Malaysia ở góc hẹp. 2-0 kho U22 Campuchia.
+                    Lúc
+                    này, hiệu số bàn thắng bại của họ đã hươn lên là +6.
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            BẢN QUYỀN CNTT_HAUI.com
+        </div>
+    </div>
+</body>
+
+</html>

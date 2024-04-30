@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .header {
+        background-color: greenyellow;
+        width: 100%;
+        height: 90px;
+        border-bottom: solid 2px yellow;
+        display: block;
+    }
+
+    #menu ul {
+        background-color: green;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 50px;
+        list-style-type: none;
+    }
+
+    #menu ul li {
+        position: relative;
+    }
+
+    #menu ul li a {
+        text-decoration: none;
+        line-height: 50px;
+        width: 90px;
+        columns: blue;
+        text-align: center;
+        display: inline-block;
+    }
+
+    #menu ul li a:hover {
+        background-color: gray;
+    }
+
+    #menu .sub {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        display: none;
+    }
+
+    #menu .sub li a {
+        height: 50px;
+        width: 200px;
+    }
+
+    #menu .super:hover .sub {
+        display: block;
+    }
+
+    .content {
+        margin-top: 50px;
+        background-color: yellowgreen;
+        display: flex;
+        width: 100%;
+        height: 400px;
+    }
+
+    .content #list {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 100px;
+        float: left;
+    }
+
+    #content2 {
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <img src="1.1.png" style="width: 90px; height: 90px; border: solid thin black; float: left;">
+        <p style="margin-left: 400px; font-size: 40px;">TRUYỆN NGẮN</p>
+        <p style=" display: block; margin-left: 550px; font-size: 40px;">HAY TRONG TUẦN</p>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Truyện blog</a></li>
+                <li class="super">
+                    <a href="#">Trang chủ</a>
+                    <ul class="sub">
+                        <li><a href="#">Truyện ngắn về tình yêu</a></li>
+                        <li><a href="#">Truyện ngắn về gia đình</a></li>
+                        <li><a href="#">Truyện ngắn về bạn bè</a></li>
+                        <li><a href="#">Truyện ngắn về đời sống</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sách hay</a></li>
+                <li><a href="#">Tâm sự</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Truyện cười</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div id="list">
+            <p style="margin-bottom: 10px; font-size: 30px;"><b>Tủ sách</b></p>
+            <ul style="list-style-type: disc;">
+                <li>Truyện nổi bật</li>
+                <li>Truyện mới</li>
+                <li>Tiểu thuyết mới</li>
+                <li>Truyện kiếm hiệp mới</li>
+                <li>Truyện khoa học viễn tưởng</li>
+                <li>Truyện trinh thám</li>
+                <li>Góc cười</li>
+                <li>Góc tâm sự </li>
+            </ul>
+        </div>
+        <div id="content2">
+            <img src="1.2.png"
+                style=" margin-left: 70px; width: 200px; height: 300px; background-color: white; padding: 5px 10px; border: solid thin black; float: left;">
+            <span>aaaaaaaaaaaaaaaaaaaaaaaa</span>
+        </div>
+    </div>
+</body>
+
+</html>

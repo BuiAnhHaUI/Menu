@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+/* 
+    body {
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+        color: #000;
+    } */
+
+    #menu ul {
+        list-style-type: none;
+        background: #0f0;
+        width: 250px;
+        padding: 0;
+        position: relative;
+    }
+
+    #menu ul li {
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+    }
+
+    #menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+
+    #menu ul li a:hover {
+        background: #ff0;
+        color: #333;
+    }
+
+    #menu ul li>.menucon {
+        display: none;
+        position: absolute;
+        left: 250px;
+        top: 0;
+    }
+
+    #menu ul li:hover .menucon {
+        display: block;
+    }
+</style>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="">Kinh tế</a></li>
+            <li><a href="">Văn hóa xã hội</a>
+                <ul class="menucon">
+                    <li><a href="">Kinh tế1</a></li>
+                    <li><a href="">Kinh tế2</a></li>
+                    <li><a href="">Kinh tế3</a></li>
+                </ul>
+            </li>
+            <li><a href="">Giáo dục công</a></li>
+            <li><a href="">Học tập</a></li>
+            <li><a href="">Sách hay</a></li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

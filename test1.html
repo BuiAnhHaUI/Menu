@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .header {
+        background-color: yellowgreen;
+        
+    }
+    .menu ul {
+        background-color: aqua;
+        width: 200px;
+        height: 500px;
+        position: relative;
+        list-style-type: none;
+    }
+
+    .menu ul li {
+        position: relative;
+        border-bottom: solid thin black;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: blue;
+        text-align: center;
+        width: 200px;
+        line-height: 50px;
+
+    }
+
+    .menu ul li a:hover {
+        background-color: gray;
+    }
+
+    .menu .sub {
+        position: absolute;
+        left: 200px;
+        top: 0;
+        display: none;
+        background-color: gray;
+    }
+    .menu .sub {
+        height: 200px;
+    }
+    .menu .super:hover .sub {
+        display: block  ;
+    }
+    .content {
+        display: flex;
+    }
+</style>
+<body>
+    <div class="header">
+        <img src="1.1.png" style="width: 90px; height: 90px; border: solid thin black; float: left;">
+        <p style="margin-left: 400px; font-size: 40px;">TRUYỆN NGẮN</p>
+        <p style=" display: block; margin-left: 550px; font-size: 40px;">HAY TRONG TUẦN</p>
+    </div>
+    <div class="content">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Truyện blog</a></li>
+                <li class="super">
+                    <a href="#">Trang chủ</a>
+                    <ul class="sub">
+                        <li><a href="#">Truyện ngắn về tình yêu</a></li>
+                        <li><a href="#">Truyện ngắn về gia đình</a></li>
+                        <li><a href="#">Truyện ngắn về bạn bè</a></li>
+                        <li><a href="#">Truyện ngắn về đời sống</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sách hay</a></li>
+                <li><a href="#">Tâm sự</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Truyện cười</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
